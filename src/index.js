@@ -57,9 +57,9 @@ class Root extends Component{
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
+  hydrate(<Root/>, rootElement);
 } else {
-  render(<App />, rootElement);
+  render(<Root/>, rootElement);
 }
 
 //serviceWorker.register();
