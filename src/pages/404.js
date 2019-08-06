@@ -18,9 +18,9 @@ class PageNotFound extends Component{
                             <div className="error-content-centered d-flex align-items-center justfy-content-center">
                             <div className="error-page-content-wrap">
                                 <h2>404</h2>
-                                <h3>PAGE NOT FOUND</h3>
-                                <p>Sorry but the page you are looking for does not exist, have been removed, name changed or is temporarily unavailable.</p>
-                                <a href="/" className="ht-btn ht-btn--default ht-btn--default--dark-hover">Back to Home Page</a>
+                                <h3>Страница не найдена</h3>
+                                <p>Страница не создана или временно недоступна</p>
+                                <a href="/" className="ht-btn ht-btn--default ht-btn--default--dark-hover">На главную</a>
                             </div>
                             </div>
                         </div>
