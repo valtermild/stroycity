@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-//import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import './index.scss';
 import HomeOne from './HomeOne';
 import About from './pages/About';
@@ -23,7 +23,7 @@ import PageNotFound from './pages/404';
 import NoMAtch from './pages/404';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 //import * as serviceWorker from './serviceWorker';
-import { hydrate, render } from "react-dom";
+//import { hydrate, render } from "react-dom";
 
 class Root extends Component{
     render(){
@@ -55,11 +55,6 @@ class Root extends Component{
     }
 }
 
-const rootElement = document.getElementById("root");
-if (rootElement.hasChildNodes()) {
-  hydrate(<Root/>, rootElement);
-} else {
-  render(<Root/>, rootElement);
-}
+ReactDOM.render(<Root/>, document.getElementById('root'));
 
 //serviceWorker.register();

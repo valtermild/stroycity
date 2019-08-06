@@ -75,8 +75,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "predeploy": "npm run build --prod && cp CNAME build/CNAME",
-    "deploy": "gh-pages -d build",
-    "postbuild": "react-snap"
+    "deploy": "gh-pages -d build"    
   },
   "eslintConfig": {
     "extends": "react-app"
