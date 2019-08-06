@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/stroycity/static/css/main.56bb149c.chunk.css",
-    "main.js": "/stroycity/static/js/main.a39d8637.chunk.js",
-    "main.js.map": "/stroycity/static/js/main.a39d8637.chunk.js.map",
-    "runtime~main.js": "/stroycity/static/js/runtime~main.c56fe692.js",
-    "runtime~main.js.map": "/stroycity/static/js/runtime~main.c56fe692.js.map",
-    "static/css/2.2e6fe377.chunk.css": "/stroycity/static/css/2.2e6fe377.chunk.css",
-    "static/js/2.82414fa4.chunk.js": "/stroycity/static/js/2.82414fa4.chunk.js",
-    "static/js/2.82414fa4.chunk.js.map": "/stroycity/static/js/2.82414fa4.chunk.js.map",
-    "index.html": "/stroycity/index.html",
-    "precache-manifest.9849f7afcabf52c94486a359c61ee1db.js": "/stroycity/precache-manifest.9849f7afcabf52c94486a359c61ee1db.js",
-    "service-worker.js": "/stroycity/service-worker.js",
-    "static/css/2.2e6fe377.chunk.css.map": "/stroycity/static/css/2.2e6fe377.chunk.css.map",
-    "static/css/main.56bb149c.chunk.css.map": "/stroycity/static/css/main.56bb149c.chunk.css.map",
-    "static/media/index.scss": "/stroycity/static/media/lg.ecff1170.eot"
+    "main.css": "/static/css/main.56bb149c.chunk.css",
+    "main.js": "/static/js/main.3459a0f1.chunk.js",
+    "main.js.map": "/static/js/main.3459a0f1.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.a05c9549.chunk.css": "/static/css/2.a05c9549.chunk.css",
+    "static/js/2.82414fa4.chunk.js": "/static/js/2.82414fa4.chunk.js",
+    "static/js/2.82414fa4.chunk.js.map": "/static/js/2.82414fa4.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.02105dcaa7fd45ccc8a8fc43e4c2ff6d.js": "/precache-manifest.02105dcaa7fd45ccc8a8fc43e4c2ff6d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.a05c9549.chunk.css.map": "/static/css/2.a05c9549.chunk.css.map",
+    "static/css/main.56bb149c.chunk.css.map": "/static/css/main.56bb149c.chunk.css.map",
+    "static/media/index.scss": "/static/media/lg.ecff1170.eot"
   }
 }
