@@ -22,7 +22,7 @@ import Contact from './pages/Contact';
 import PageNotFound from './pages/404';
 import NoMAtch from './pages/404';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-//import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './serviceWorker';
 //import { hydrate, render } from "react-dom";
 
 class Root extends Component{
@@ -57,4 +57,4 @@ class Root extends Component{
 
 ReactDOM.render(<Root/>, document.getElementById('root'));
 
-//serviceWorker.register();
+serviceWorker.register();
