@@ -5,10 +5,15 @@ import ServiceGallery from './components/ServiceGallery';
 import BrandLogoSlider from '../components/BrandLogoSlider';
 import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
+import {Helmet} from "react-helmet";
 class repair extends Component{
     render(){
         return(
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>Реконструкция зданий от компании "СТРОЙ СИТИ ГРУПП" | Строительная компания в Ялте</title>
+                <meta name="description" content="Услуга по реконструкции зданий и сооружений, внешние и внутренние виды работ" />        </Helmet>
                 {/* Navigation bar */}
                 <NavBar/>
 

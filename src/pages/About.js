@@ -8,6 +8,8 @@ import BrandLogoSlider from '../components/BrandLogoSlider'; */
 import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
 //import ModalVideo from 'react-modal-video'
+import {Helmet} from "react-helmet";
+
 class About extends Component{
 
     constructor () {
@@ -25,7 +27,11 @@ class About extends Component{
     render(){
         return(
             <div>
-
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>О компании "СТРОЙ СИТИ ГРУПП" | Общая информация, реквизиты</title>
+                <meta name="description" content="Подробное описание деятельности компании и официальные документы для заключения договора" />                
+                </Helmet>
                 {/* Navigation bar */}
                 <NavBar/>
                 

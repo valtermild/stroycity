@@ -5,10 +5,16 @@ import ServiceGallery from './components/ServiceGallery';
 import BrandLogoSlider from '../components/BrandLogoSlider';
 import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
+import {Helmet} from "react-helmet";
 class turkey extends Component{
     render(){
         return(
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>Прямые поставки строительных и отделочных материалов | Строительная компания в Ялте</title>
+                <meta name="description" content="Качественные материалы для строительных работ от компании 'СТРОЙ СИТИ ГРУПП'" />
+                </Helmet>
                 {/* Navigation bar */}
                 <NavBar/>
 

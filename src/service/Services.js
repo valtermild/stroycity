@@ -3,6 +3,7 @@ import NavBar from '../components/NavBar';
 import BrandLogoSlider from '../components/BrandLogoSlider';
 import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
+import {Helmet} from "react-helmet";
 class Services extends Component{
     render(){
 
@@ -40,7 +41,11 @@ class Services extends Component{
 
         return(
             <div>
-
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>Базовые услуги компании "СТРОЙ СИТИ ГРУПП" | Строительная компания в Ялте</title>
+                <meta name="description" content="Услуги, предлагаемые нашей организации." /> 
+                </Helmet>
                 {/* Navigation bar */}
                 <NavBar/>
 

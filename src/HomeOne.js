@@ -8,12 +8,18 @@ import TestimonialSlider from './components/TestimonialSlider'; */
 import BrandLogoSlider from './components/BrandLogoSlider';
 import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
+import {Helmet} from "react-helmet";
 
 class HomeOne extends Component{
     render(){
         
         return(
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>СТРОЙ СИТИ ГРУПП | Строительная компания в Ялте</title>
+                <meta name="description" content="Строительство и ремонт помещений в Ялте по современным технологиям, с использованием качественных материалов" />                
+                </Helmet>
                 
                 {/* Navigation bar */}
                 <NavBar/>

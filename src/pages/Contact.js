@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
+import {Helmet} from "react-helmet";
 class Contact extends Component {
     render() {
         return (
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>Контактная информация компании "СТРОЙ СИТИ ГРУПП" | Карта проезда, адрес, телефон</title>
+                <meta name="description" content="Контакты организации, карта с указанием адреса офиса, контактный телефон, электронная почта" />                
+                </Helmet>
                 {/* Navigation bar */}
                 <NavBar />
 

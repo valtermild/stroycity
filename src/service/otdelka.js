@@ -5,10 +5,16 @@ import ServiceGallery from './components/ServiceGallery';
 import BrandLogoSlider from '../components/BrandLogoSlider';
 import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
+import {Helmet} from "react-helmet";
 class otdelka extends Component{
     render(){
         return(
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>Отделочные работы от компании "СТРОЙ СИТИ ГРУПП" | Строительная компания в Ялте</title>
+                <meta name="description" content="Описание видов отделочных работых в жилых и нежилых помещениях" />                
+                </Helmet>
                 {/* Navigation bar */}
                 <NavBar/>
 

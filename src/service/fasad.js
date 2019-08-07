@@ -5,10 +5,16 @@ import ServiceGallery from './components/ServiceGallery';
 import BrandLogoSlider from '../components/BrandLogoSlider';
 import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
+import {Helmet} from "react-helmet";
 class fasad extends Component{
     render(){
         return(
             <div>
+                <Helmet>
+                <meta charSet="utf-8" />
+                <title>Фасадные работы от компании "СТРОЙ СИТИ ГРУПП" | Строительная компания в Ялте</title>
+                <meta name="description" content="Описание видов работ при ремонте фасадов зданий и сооружений" />                
+                </Helmet>
                 {/* Navigation bar */}
                 <NavBar/>
 
