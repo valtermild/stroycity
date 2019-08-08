@@ -3,8 +3,9 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
 import {Helmet} from "react-helmet";
-class Contact extends Component {
-    render() {
+class Contact extends Component {  
+    
+    render() {               
         return (
             <div>
                 <Helmet>
@@ -72,7 +73,7 @@ class Contact extends Component {
                                         <form id="contact-form">
                                             <div className="row row-10">
                                                 <div className="col-md-6 col-12 section-space--bottom--20"><input name="con_name" type="text" placeholder="Имя" /></div>
-                                                <div className="col-md-6 col-12 section-space--bottom--20"><input name="con_email" type="email" placeholder="Email" /></div>
+                                                <div className="col-md-6 col-12 section-space--bottom--20"><input name="con_email" type="text" placeholder="Email или телефон" /></div>
                                                 <div className="col-12"><textarea name="con_message" placeholder="Сообщение" defaultValue={""} /></div>
                                                 <div className="col-12"><button>ОТПРАВИТЬ</button></div>
                                             </div>
