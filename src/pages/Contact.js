@@ -3,9 +3,67 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import MobileMenu from '../components/MobileMenu';
 import {Helmet} from "react-helmet";
+import axios from 'axios';
+
 class Contact extends Component {  
+    constructor(props) {
+        super(props);
+        this.state = {
+            con_name: '',
+            con_email: '',           
+            con_message: '',
+            //mailSent: false,
+           // error: null
+        };        
+      }
+      
+      
+      onChange = (e) => {        
+        this.setState({ [e.target.name]: e.target.value });
+      }
+      
+
+      onSubmit = (e) => {
+        e.preventDefault();
+        
+        const { con_name, con_email, con_message } = this.state;
+
+        const data = {
+            service_id: 'gmail',
+            template_id: 'template_cQw0qIn1',
+            user_id: 'user_ExcPumNz3gi7BoDOOsxv0',
+            template_params: {
+                con_name,
+                con_email,
+                con_message
+            }
+        };
+        
+        const url = 'https://api.emailjs.com/api/v1.0/email/send';        
+        
+        if (con_email !== '') {
+        axios.post(url, data)
+            .then(function (response) {                 
+                console.log(response);
+                alert("Сообщение отправлено")
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+        } else {
+            console.log('err');
+            alert("Введите email или номер телефона")
+        }
+          
+          this.setState({
+            con_name: '',
+            con_email: '',           
+            con_message: ''
+        });
+      }
     
-    render() {               
+    render() { 
+        const { con_name, con_email, con_message } = this.state;              
         return (
             <div>
                 <Helmet>
@@ -69,13 +127,16 @@ class Contact extends Component {
                                 </div>
                                 <div className="col-lg-8 col-12">
                                     <div className="contact-form">
-                                        <h3>Оставьте ваше сообщение</h3>
-                                        <form id="contact-form">
+                                        <h3>Оставьте ваше сообщение</h3>                                        
+                                        <form id="contact-form" onSubmit={this.onSubmit}>
                                             <div className="row row-10">
-                                                <div className="col-md-6 col-12 section-space--bottom--20"><input name="con_name" type="text" placeholder="Имя" /></div>
-                                                <div className="col-md-6 col-12 section-space--bottom--20"><input name="con_email" type="text" placeholder="Email или телефон" /></div>
-                                                <div className="col-12"><textarea name="con_message" placeholder="Сообщение" defaultValue={""} /></div>
-                                                <div className="col-12"><button>ОТПРАВИТЬ</button></div>
+                                                <div className="col-md-6 col-12 section-space--bottom--20"><input name="con_name" type="text" placeholder="Имя" value={con_name}
+    onChange={this.onChange} /></div>
+                                                <div className="col-md-6 col-12 section-space--bottom--20"><input name="con_email" type="text" placeholder="Email или телефон" value={con_email}
+    onChange={this.onChange} /></div>
+                                                <div className="col-12"><textarea name="con_message" placeholder="Сообщение" value={con_message}
+    onChange={this.onChange} /></div>
+                                                <div className="col-12"><button type="submit" >ОТПРАВИТЬ</button></div>
                                             </div>
                                         </form>
                                     </div>
@@ -91,8 +152,7 @@ class Contact extends Component {
                 <Footer />
 
                 {/* Mobile Menu */}
-                <MobileMenu />
-
+                <MobileMenu />                
             </div>
         )
     }
