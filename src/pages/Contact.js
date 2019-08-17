@@ -29,7 +29,7 @@ class Contact extends Component {
         const { con_name, con_email, con_message } = this.state;
 
         const data = {
-            service_id: 'gmail',
+            service_id: 'mail_ru',
             template_id: 'template_cQw0qIn1',
             user_id: 'user_ExcPumNz3gi7BoDOOsxv0',
             template_params: {
